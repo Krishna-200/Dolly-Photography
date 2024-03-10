@@ -21,6 +21,7 @@ import slide_img_5 from "../Images/PortfolioPage/Swiper/C.jpg";
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 
 import gsap from "gsap";
+import { Suspense } from "react";
 
 const Portfolio = () => {
   const ref = useRef([]);
@@ -115,95 +116,97 @@ const Portfolio = () => {
             </div>
           </Swiper>
         </div>
-        <div className={css.portfolioContent}>
-          <div ref={addtoRefs}>
-            <h1>Our Work</h1>
-          </div>
-          <div ref={addtoRefs} className={css.portfolioComponents}>
-            <div
-              onClick={() => handlePortfolioClick(1)}
-              className={css.portfolioComponent}
-            >
-              <div>
-                <img src={portfolioImages.portfolio1} alt="" />
-              </div>
-              <h2>Dolly & Molly</h2>
+        <Suspense fallback={<h1>Loading . . .</h1>}>
+          <div className={css.portfolioContent}>
+            <div ref={addtoRefs}>
+              <h1>Our Work</h1>
             </div>
-            <div
-              onClick={() => handlePortfolioClick(2)}
-              className={css.portfolioComponent}
-            >
-              <div>
-                <img src={portfolioImages.portfolio2} alt="" />
+            <div ref={addtoRefs} className={css.portfolioComponents}>
+              <div
+                onClick={() => handlePortfolioClick(1)}
+                className={css.portfolioComponent}
+              >
+                <div>
+                  <img src={portfolioImages.portfolio1} alt="" />
+                </div>
+                <h2>Dolly & Molly</h2>
               </div>
-              <h2>Dolly & Molly</h2>
-            </div>
-            <div
-              onClick={() => handlePortfolioClick(3)}
-              className={css.portfolioComponent}
-            >
-              <div>
-                <img src={portfolioImages.portfolio3} alt="" />
+              <div
+                onClick={() => handlePortfolioClick(2)}
+                className={css.portfolioComponent}
+              >
+                <div>
+                  <img src={portfolioImages.portfolio2} alt="" />
+                </div>
+                <h2>Dolly & Molly</h2>
               </div>
-              <h2>Dolly & Molly</h2>
-            </div>
-            <div
-              onClick={() => handlePortfolioClick(4)}
-              className={css.portfolioComponent}
-            >
-              <div>
-                <img src={portfolioImages.portfolio4} alt="" />
+              <div
+                onClick={() => handlePortfolioClick(3)}
+                className={css.portfolioComponent}
+              >
+                <div>
+                  <img src={portfolioImages.portfolio3} alt="" />
+                </div>
+                <h2>Dolly & Molly</h2>
               </div>
-              <h2>Dolly & Molly</h2>
-            </div>
-            <div
-              onClick={() => handlePortfolioClick(5)}
-              className={css.portfolioComponent}
-            >
-              <div>
-                <img src={portfolioImages.portfolio5} alt="" />
+              <div
+                onClick={() => handlePortfolioClick(4)}
+                className={css.portfolioComponent}
+              >
+                <div>
+                  <img src={portfolioImages.portfolio4} alt="" />
+                </div>
+                <h2>Dolly & Molly</h2>
               </div>
-              <h2>Dolly & Molly</h2>
-            </div>
-            <div
-              onClick={() => handlePortfolioClick(6)}
-              className={css.portfolioComponent}
-            >
-              <div>
-                <img src={portfolioImages.portfolio6} alt="" />
+              <div
+                onClick={() => handlePortfolioClick(5)}
+                className={css.portfolioComponent}
+              >
+                <div>
+                  <img src={portfolioImages.portfolio5} alt="" />
+                </div>
+                <h2>Dolly & Molly</h2>
               </div>
-              <h2>Dolly & Molly</h2>
-            </div>
-            <div
-              onClick={() => handlePortfolioClick(7)}
-              className={css.portfolioComponent}
-            >
-              <div>
-                <img src={portfolioImages.portfolio7} alt="" />
+              <div
+                onClick={() => handlePortfolioClick(6)}
+                className={css.portfolioComponent}
+              >
+                <div>
+                  <img src={portfolioImages.portfolio6} alt="" />
+                </div>
+                <h2>Dolly & Molly</h2>
               </div>
-              <h2>Dolly & Molly</h2>
-            </div>
+              <div
+                onClick={() => handlePortfolioClick(7)}
+                className={css.portfolioComponent}
+              >
+                <div>
+                  <img src={portfolioImages.portfolio7} alt="" />
+                </div>
+                <h2>Dolly & Molly</h2>
+              </div>
 
-            <div
-              onClick={() => handlePortfolioClick(8)}
-              className={css.portfolioComponent}
-            >
-              <div>
-                <img src={portfolioImages.portfolio8} alt="" />
+              <div
+                onClick={() => handlePortfolioClick(8)}
+                className={css.portfolioComponent}
+              >
+                <div>
+                  <img src={portfolioImages.portfolio8} alt="" />
+                </div>
+                <h2>Dolly & Molly</h2>
               </div>
-              <h2>Dolly & Molly</h2>
-            </div>
-            <div
-              onClick={() => handlePortfolioClick(9)}
-              className={css.portfolioComponent}
-            >
-              <div>
-                <img src={portfolioImages.portfolio9} alt="" />
+              <div
+                onClick={() => handlePortfolioClick(9)}
+                className={css.portfolioComponent}
+              >
+                <div>
+                  <img src={portfolioImages.portfolio9} alt="" />
+                </div>
+                <h2>Dolly & Molly</h2>
               </div>
-              <h2>Dolly & Molly</h2>
             </div>
           </div>
-        </div>
+        </Suspense>
         <div>
           <Footer />
         </div>
