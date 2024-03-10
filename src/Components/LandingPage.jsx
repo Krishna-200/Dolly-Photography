@@ -407,63 +407,96 @@ const LandingPage = () => {
           <h1 ref={addtoRefs}>Your Wedding Day Captured In Style.</h1>
           <div className={css.portfolio_rows}>
             <div ref={addtoRefs} className={css.portfolio_row_1}>
-              <div
-                onClick={() => handlePortfolioClick(1)}
-                className={css.row_1_img_1}
-              >
-                <img src={portfolioImages.portfolio1} alt="" />
-              </div>
-              <div
-                onClick={() => handlePortfolioClick(4)}
-                className={css.row_1_img_2}
-              >
-                <img src={portfolioImages.portfolio4} alt="" />
-              </div>
-              <div
-                onClick={() => handlePortfolioClick(7)}
-                className={css.row_1_img_3}
-              >
-                <img src={portfolioImages.portfolio7} alt="" />
+              <div className={css.imageContainer}>
+                <div className={css.row_1_img_1}>
+                  <img src={portfolioImages.portfolio1} alt="" />
+                  <div
+                    onClick={() => handlePortfolioClick(1)}
+                    className={css.viewMoreButton}
+                  >
+                    <button>View More</button>
+                  </div>
+                </div>
+                <div className={css.row_1_img_2}>
+                  <img src={portfolioImages.portfolio4} alt="" />
+                  <div
+                    onClick={() => handlePortfolioClick(4)}
+                    className={css.viewMoreButton}
+                  >
+                    <button>View More</button>
+                  </div>
+                </div>
+                <div className={css.row_1_img_3}>
+                  <img src={portfolioImages.portfolio7} alt="" />
+                  <div
+                    onClick={() => handlePortfolioClick(7)}
+                    className={css.viewMoreButton}
+                  >
+                    <button>View More</button>
+                  </div>
+                </div>
               </div>
             </div>
             <div ref={addtoRefs} className={css.portfolio_row_2}>
-              <div
-                onClick={() => handlePortfolioClick(2)}
-                className={css.row_2_img_1}
-              >
-                <img src={portfolioImages.portfolio2} alt="" />
-              </div>
-              <div
-                onClick={() => handlePortfolioClick(5)}
-                className={css.row_2_img_2}
-              >
-                <img src={portfolioImages.portfolio5} alt="" />
-              </div>
-              <div
-                onClick={() => handlePortfolioClick(8)}
-                className={css.row_2_img_3}
-              >
-                <img src={portfolioImages.portfolio8} alt="" />
+              <div className={css.imageContainer}>
+                <div className={css.row_2_img_1}>
+                  <img src={portfolioImages.portfolio2} alt="" />
+                  <div className={css.viewMoreButton}>
+                    <button>View More</button>
+                  </div>
+                </div>
+                <div
+                  onClick={() => handlePortfolioClick(5)}
+                  className={css.row_2_img_2}
+                >
+                  <img src={portfolioImages.portfolio5} alt="" />
+                  <div
+                    onClick={() => handlePortfolioClick(2)}
+                    className={css.viewMoreButton}
+                  >
+                    <button>View More</button>
+                  </div>
+                </div>
+                <div className={css.row_2_img_3}>
+                  <img src={portfolioImages.portfolio8} alt="" />
+                  <div
+                    onClick={() => handlePortfolioClick(8)}
+                    className={css.viewMoreButton}
+                  >
+                    <button>View More</button>
+                  </div>
+                </div>
               </div>
             </div>
             <div ref={addtoRefs} className={css.portfolio_row_1}>
-              <div
-                onClick={() => handlePortfolioClick(3)}
-                className={css.row_1_img_1}
-              >
-                <img src={portfolioImages.portfolio3} alt="" />
-              </div>
-              <div
-                onClick={() => handlePortfolioClick(6)}
-                className={css.row_1_img_2}
-              >
-                <img src={portfolioImages.portfolio6} alt="" />
-              </div>
-              <div
-                onClick={() => handlePortfolioClick(9)}
-                className={css.row_1_img_3}
-              >
-                <img src={portfolioImages.portfolio9} alt="" />
+              <div className={css.imageContainer}>
+                <div className={css.row_1_img_1}>
+                  <img src={portfolioImages.portfolio3} alt="" />
+                  <div
+                    onClick={() => handlePortfolioClick(3)}
+                    className={css.viewMoreButton}
+                  >
+                    <button>View More</button>
+                  </div>
+                </div>
+                <div className={css.row_1_img_2}>
+                  <img src={portfolioImages.portfolio6} alt="" />
+                  <div
+                    onClick={() => handlePortfolioClick(6)}
+                    className={css.viewMoreButton}
+                  >
+                    <button>View More</button>
+                  </div>
+                </div>
+                <div className={css.row_1_img_3}>
+                  <img src={portfolioImages.portfolio9} alt="" />
+                  <div
+                    onClick={() => handlePortfolioClick(9)}
+                    className={css.viewMoreButton}
+                  >
+                    <button>View More</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

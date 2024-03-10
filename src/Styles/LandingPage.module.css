@@ -476,6 +476,7 @@ html {
   overflow: hidden;
   position: relative;
   z-index: 1;
+  margin-bottom: 10px;
 }
 
 .row_1_img_2,
@@ -485,6 +486,7 @@ html {
   height: 497px;
   overflow: hidden;
   z-index: 1;
+  margin-bottom: 10px;
 }
 
 .row_1_img_2 img,
@@ -497,6 +499,33 @@ html {
   height: 100%;
   transform: scale(1.2);
   transition: transform 0.3s ease;
+  position: relative;
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.viewMoreButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 5%;
+  z-index: 1;
+  right: 40%;
+  display: none;
+}
+
+.viewMoreButton button {
+  font-weight: bold;
+  padding: 10px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+  outline: none;
 }
 
 .row_1_img_2 img:hover,
@@ -506,6 +535,26 @@ html {
 .row_2_img_3 img:hover,
 .row_2_img_2 img:hover {
   transform: scale(1);
+}
+.row_1_img_2:hover .viewMoreButton,
+.row_2_img_1:hover .viewMoreButton,
+.row_1_img_1:hover .viewMoreButton,
+.row_1_img_3:hover .viewMoreButton,
+.row_2_img_3:hover .viewMoreButton,
+.row_2_img_2:hover .viewMoreButton {
+  display: flex;
+  animation: 0.2s ease-in-out viewMoreButtonAnimation;
+}
+
+@keyframes viewMoreButtonAnimation {
+  0% {
+    transform: translate3d(0, 50px, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
 }
 
 .contact {
@@ -710,7 +759,12 @@ html {
 
 .portfolioNavbar {
   background-color: black;
+  /* color: black; */
   height: 11vh;
+}
+
+.mainPortfolioComponent {
+  overflow: hidden;
 }
 
 .portfolioComponent {
@@ -986,6 +1040,9 @@ html {
   .portfolio {
     margin-bottom: 0px !important;
   }
+  .viewMoreButton {
+    display: flex;
+  }
 
   .portfolio_rows {
     flex-direction: column;
@@ -1066,7 +1123,7 @@ html {
   .footer {
     margin: 0;
     height: 100%;
-    margin-bottom: 180px;
+    /* margin-bottom: 180px; */
   }
 
   .footer h1 {
@@ -1104,6 +1161,11 @@ html {
   }
   .reviewCards {
     width: 100vh !important;
+  }
+  .portfolioContent h1 {
+    width: 150%;
+    font-size: 40px;
+    margin: 0;
   }
 }
 

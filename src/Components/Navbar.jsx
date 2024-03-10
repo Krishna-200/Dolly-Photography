@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import css from "../Styles/LandingPage.module.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -12,8 +13,11 @@ const Navbar = () => {
   const closeSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
+
+  const navigate = useNavigate();
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
+    navigate("/");
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
@@ -75,7 +79,12 @@ const Navbar = () => {
               <Link to="/" style={{ textDecoration: "none" }}>
                 <li>HOME</li>
               </Link>
-              <li>ABOUT US</li>
+              <a
+                onClick={() => scrollToSection("About_Us")}
+                style={{ textDecoration: "none" }}
+              >
+                <li>ABOUT US</li>
+              </a>
               <Link to="/Portfolio" style={{ textDecoration: "none" }}>
                 <li>PORTFOLIO</li>
               </Link>

@@ -42,8 +42,12 @@
 }
 
 @media (max-width: 500px) {
+  .container {
+    padding-top: 4rem;
+  }
   .swiper_container {
-    height: 47rem;
+    margin: 0;
+    height: 40rem;
   }
   .swiper-slide {
     width: 28rem !important;
