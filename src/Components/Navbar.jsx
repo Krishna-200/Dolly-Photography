@@ -76,10 +76,15 @@ const Navbar = () => {
                 <li>HOME</li>
               </Link>
               <li>ABOUT US</li>
-              <Link style={{ textDecoration: "none" }}>
+              <Link to="/Portfolio" style={{ textDecoration: "none" }}>
                 <li>PORTFOLIO</li>
               </Link>
-              <li>CONATCT US</li>
+              <a
+                onClick={() => scrollToSection("Contact_Us")}
+                style={{ textDecoration: "none" }}
+              >
+                <li>CONATCT US</li>
+              </a>
             </ul>
           </div>
         )}
