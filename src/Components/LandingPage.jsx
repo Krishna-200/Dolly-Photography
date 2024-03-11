@@ -278,7 +278,9 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-        <div className={css.parallax}></div>
+        <div className={css.parallax}>
+          <h1>hlo</h1>
+        </div>
         <div className={css.services}>
           <h1>Our Services</h1>
           <div className={css.serviceImages}>
@@ -349,7 +351,6 @@ const LandingPage = () => {
                     <h3>DOlly & Molly</h3>
                     <h2>Classic Wedding</h2>
                   </div>
-
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit sed
                     do eiusmod tempor incididunt ut labore
@@ -414,6 +415,7 @@ const LandingPage = () => {
                     onClick={() => handlePortfolioClick(1)}
                     className={css.viewMoreButton}
                   >
+                    <h1>About Content</h1>
                     <button>View More</button>
                   </div>
                 </div>
@@ -423,6 +425,7 @@ const LandingPage = () => {
                     onClick={() => handlePortfolioClick(4)}
                     className={css.viewMoreButton}
                   >
+                    <h1>About Content</h1>
                     <button>View More</button>
                   </div>
                 </div>
@@ -432,6 +435,7 @@ const LandingPage = () => {
                     onClick={() => handlePortfolioClick(7)}
                     className={css.viewMoreButton}
                   >
+                    <h1>About Content</h1>
                     <button>View More</button>
                   </div>
                 </div>
@@ -442,6 +446,7 @@ const LandingPage = () => {
                 <div className={css.row_2_img_1}>
                   <img src={portfolioImages.portfolio2} alt="" />
                   <div className={css.viewMoreButton}>
+                    <h1>About Content</h1>
                     <button>View More</button>
                   </div>
                 </div>
@@ -454,6 +459,7 @@ const LandingPage = () => {
                     onClick={() => handlePortfolioClick(2)}
                     className={css.viewMoreButton}
                   >
+                    <h1>About Content</h1>
                     <button>View More</button>
                   </div>
                 </div>
@@ -463,6 +469,7 @@ const LandingPage = () => {
                     onClick={() => handlePortfolioClick(8)}
                     className={css.viewMoreButton}
                   >
+                    <h1>About Content</h1>
                     <button>View More</button>
                   </div>
                 </div>
@@ -476,6 +483,7 @@ const LandingPage = () => {
                     onClick={() => handlePortfolioClick(3)}
                     className={css.viewMoreButton}
                   >
+                    <h1>About Content</h1>
                     <button>View More</button>
                   </div>
                 </div>
@@ -485,6 +493,7 @@ const LandingPage = () => {
                     onClick={() => handlePortfolioClick(6)}
                     className={css.viewMoreButton}
                   >
+                    <h1>About Content</h1>
                     <button>View More</button>
                   </div>
                 </div>
@@ -494,6 +503,7 @@ const LandingPage = () => {
                     onClick={() => handlePortfolioClick(9)}
                     className={css.viewMoreButton}
                   >
+                    <h1>About Content</h1>
                     <button>View More</button>
                   </div>
                 </div>

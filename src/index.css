@@ -43,7 +43,8 @@
 
 @media (max-width: 500px) {
   .container {
-    padding-top: 4rem;
+    padding-top: 0rem;
+    padding-bottom: 4rem;
   }
   .swiper_container {
     margin: 0;

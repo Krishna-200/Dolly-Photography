@@ -511,13 +511,23 @@ html {
   align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: 5%;
+  bottom: 0%;
   z-index: 1;
-  right: 40%;
+  /* right: 40%; */
   display: none;
+  flex-direction: column;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.7681197478991597) 40%,
+    rgba(0, 0, 0, 0) 83%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  width: 100%;
 }
 
 .viewMoreButton button {
+  margin-bottom: 5%;
   font-weight: bold;
   padding: 10px;
   background-color: transparent;
@@ -526,6 +536,14 @@ html {
   cursor: pointer;
   border-radius: 20px;
   outline: none;
+}
+
+.viewMoreButton h1 {
+  font-size: 33px;
+  font-weight: normal;
+  font-family: "Yesteryear", cursive;
+  color: white;
+  margin: 0;
 }
 
 .row_1_img_2 img:hover,
@@ -741,6 +759,10 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .parallax2 {
@@ -865,6 +887,20 @@ html {
   .navElemets ul :nth-child(3),
   .navElemets ul :nth-child(4) {
     animation: none;
+  }
+
+  .portfolioNavbar {
+    background-color: white;
+  }
+
+  .portfolioNavbar .navElemets ul {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+
+  .portfolioNavbar li {
+    color: black;
   }
 
   .LandingImg {
@@ -1128,6 +1164,8 @@ html {
 
   .footer h1 {
     font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 0;
   }
 
   .footerContent {
@@ -1135,12 +1173,24 @@ html {
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    flex-direction: row;
   }
 
   .footerContent div {
     border: none;
     height: 100%;
-    width: 30%;
+    width: 20%;
+  }
+
+  .footerTouch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footerTouch span {
+    width: 100%;
+    margin-left: 40px;
   }
 
   .footerlinks {
